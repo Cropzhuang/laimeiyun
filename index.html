@@ -94,7 +94,7 @@
             
             channels.forEach(data => {
                 var dom = $("#hide").clone();
-                dom.find(".pick").click(function() {
+                dom.click(function() {
                     window.open(data.url);
                 })
                 dom.find(".media-body").html('<strong class="d-block text-gray-dark channel">'+data.title+'</strong>' + data.desc);
