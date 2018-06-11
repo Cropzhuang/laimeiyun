@@ -5,3 +5,4 @@
 ### 基本框架
 
 1. bootstrap 4.1.1
+2. jquery
