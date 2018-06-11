@@ -1,7 +1,7 @@
-# 纯兴趣使然的网页
+# 支持小七的网页
 
 http://www.laimeiyun.top
-网站已在阿里云实名认证，但是目前网站正在申请备案，请不要大范围传播
+
 
 ## 所有连接目前都是来自官方渠道
 
@@ -9,3 +9,4 @@ http://www.laimeiyun.top
 
 1. bootstrap 4.1.1
 2. jquery
+
