@@ -20,17 +20,23 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img onclick="location.href='https://www.bilibili.com/video/av24563324?from=lmy'" class="d-block w-100" src="http://pa0ql2s67.bkt.clouddn.com/5c303be74262024a8a46d5474be20350eede859c.png@320w_200h.png"
-                    alt="皮皮七了解一下">
+            <div class="carousel-item active" data-pause="hover">
+                <div class="d-block w-100">
+                    <iframe src="http://player.bilibili.com/player.html?aid=24563324&cid=41268514&page=1" scrolling="no" border="0" frameborder="no"
+                        framespacing="0" allowfullscreen="true"> </iframe>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img onclick='location.href="https://www.bilibili.com/video/av17383305?from=lmy"' class="d-block w-100" src="http://pa0ql2s67.bkt.clouddn.com/b24de61fc7c05f12579b215727a51ca38dd37995.jpg@320w_200h.jpg"
-                    alt="赖小七快问快答">
+            <div class="carousel-item" data-pause="hover">
+                <div class="d-block w-100">
+                    <iframe src="http://player.bilibili.com/player.html?aid=17383305&cid=28397879&page=1" scrolling="no" border="0" frameborder="no"
+                        framespacing="0" allowfullscreen="true"> </iframe>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img onclick='location.href="https://www.bilibili.com/video/av24289350?from=lmy"' class="d-block w-100" src="http://pa0ql2s67.bkt.clouddn.com/fa0bb55f1dfad50216debd4afd4a7bb3ff9829cc.png@320w_200h.png"
-                    alt="赖美云模仿秀">
+            <div class="carousel-item" data-pause="hover">
+                <div class="d-block w-100">
+                    <iframe src="http://player.bilibili.com/player.html?aid=24289350&cid=40739448&page=1" scrolling="no" border="0" frameborder="no"
+                        framespacing="0" allowfullscreen="true"> </iframe>
+                </div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -56,7 +62,6 @@
                 非101会员每天能投1票，101会员可以每天投11票
             </p>
         </div>
-
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -90,7 +95,9 @@
         }
         ]
         $(document).ready(function () {
-            $('.carousel').carousel();
+            $('.carousel').carousel({
+                interval: 5 * 60 * 1000
+            });
             
             channels.forEach(data => {
                 var dom = $("#hide").clone();
@@ -101,9 +108,6 @@
                 dom.show();
                 $("#main").append(dom);
             });
-            
-            
-            
         })
     
     </script>
